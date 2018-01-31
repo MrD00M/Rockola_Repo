@@ -30,6 +30,18 @@ public class RockolaController : MonoBehaviour {
 		}
 	}
 
+	private void ChangeLeft() {
+		currentSoundIndex -= 1;
+		if (currentSoundIndex <= -1) {
+			currentSoundIndex = 3;
+		}
+
+		if (myAudioSource != null) {
+			myAudioSource.clip = alternateSound [currentSoundIndex];
+			myAudioSource.Play ();
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
