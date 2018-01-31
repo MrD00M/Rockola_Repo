@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f063ebbee16116a419587b40026bf2a1
+timeCreated: 1517417400
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Arial-Rounded
+  fontNames:
+  - Arial-Rounded
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
