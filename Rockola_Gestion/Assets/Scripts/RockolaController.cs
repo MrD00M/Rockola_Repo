@@ -33,7 +33,7 @@ public class RockolaController : MonoBehaviour {
 	public void ChangeLeft() {
 		currentSoundIndex -= 1;
 		if (currentSoundIndex <= -1) {
-			currentSoundIndex = 3;
+			currentSoundIndex = 4;
 		}
 
 		if (myAudioSource != null) {

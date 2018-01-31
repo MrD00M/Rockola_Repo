@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 201247914}
   - component: {fileID: 201247913}
   m_Layer: 5
-  m_Name: BotonDerecha
+  m_Name: RightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,6 +377,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &228032822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228032818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d97387dc24b4840814d0d54de2f70e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alternateText: {fileID: 1484886753}
+  textIndex: -1
 --- !u!1 &240087917
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Pasar Izquierda
+  m_Text: 'Change Left
 
 '
 --- !u!222 &384435913
@@ -990,7 +1003,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pasar Derecha
+  m_Text: Change Right
 --- !u!222 &908150897
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1642,7 +1655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Now Playing: '
+  m_Text: Tunning...
 --- !u!222 &1484886754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1661,7 +1674,7 @@ GameObject:
   - component: {fileID: 1681599585}
   - component: {fileID: 1681599584}
   m_Layer: 5
-  m_Name: BotonIzquierda
+  m_Name: LeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
