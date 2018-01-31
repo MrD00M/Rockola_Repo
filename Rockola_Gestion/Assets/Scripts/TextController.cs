@@ -25,7 +25,6 @@ public class TextController : MonoBehaviour {
 		{
 		case 0:
 			alternateText.text = "Brazil anthem";
-			Debug.Log ("si funciono");
 			break;
 		case 1:
 			alternateText.text = "Israel anthem";
@@ -46,13 +45,12 @@ public class TextController : MonoBehaviour {
 		textIndex -= 1;
 
 		if (textIndex <= -1){
-			textIndex = 5;
+			textIndex = 4;
 		}
 		switch (textIndex)
 		{
 		case 0:
 			alternateText.text = "Brazil anthem";
-			Debug.Log ("si funciono");
 			break;
 		case 1:
 			alternateText.text = "Israel anthem";
