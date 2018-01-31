@@ -17,7 +17,7 @@ public class RockolaController : MonoBehaviour {
 		myAudioSource = GetComponent<AudioSource> ();
 	}
 
-	private void ChangeRight() {
+	public void ChangeRight() {
 		currentSoundIndex += 1;
 
 		if (currentSoundIndex >= alternateSound.Length) {
@@ -30,7 +30,7 @@ public class RockolaController : MonoBehaviour {
 		}
 	}
 
-	private void ChangeLeft() {
+	public void ChangeLeft() {
 		currentSoundIndex -= 1;
 		if (currentSoundIndex <= -1) {
 			currentSoundIndex = 3;
