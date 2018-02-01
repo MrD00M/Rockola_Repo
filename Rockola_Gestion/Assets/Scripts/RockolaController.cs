@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class RockolaController : MonoBehaviour {
 
+	//Se toma la referencia del Audiosource y se define el index
 	[SerializeField]
 	private AudioClip[] alternateSound;
 
@@ -11,13 +12,13 @@ public class RockolaController : MonoBehaviour {
 
 	private AudioSource myAudioSource;
 
-	// Use this for initialization
 	void Start () {
 
 		myAudioSource = GetComponent<AudioSource> ();
 	}
 
 	public void ChangeRight() {
+		//Se cambia la cancion a la derecha
 		currentSoundIndex += 1;
 
 		if (currentSoundIndex >= alternateSound.Length) {
@@ -31,6 +32,7 @@ public class RockolaController : MonoBehaviour {
 	}
 
 	public void ChangeLeft() {
+		//Se cambia la cancion a la izquierda
 		currentSoundIndex -= 1;
 		if (currentSoundIndex <= -1) {
 			currentSoundIndex = 4;
@@ -41,9 +43,5 @@ public class RockolaController : MonoBehaviour {
 			myAudioSource.Play ();
 		}
 	}
-
-	// Update is called once per frame
-	void Update () {
 		
-	}
 }

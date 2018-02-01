@@ -12,6 +12,7 @@ public class SliderController : MonoBehaviour {
 	private AudioSource volumeAudio;
 
 	public void ChangeVolume(){
+		//Edita el volumen del Audiosource en base al valor del slider
 		volumeAudio.volume = volumeSlider.value;
 	}
 		

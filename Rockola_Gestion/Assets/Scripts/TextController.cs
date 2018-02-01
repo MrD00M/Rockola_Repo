@@ -5,17 +5,16 @@ using UnityEngine.UI;
 
 public class TextController : MonoBehaviour {
 
+	//Se toma la referencia del Text y se define el index
+
 	[SerializeField]
 	private Text alternateText;
 
 	public int textIndex = -1;
 
-	// Use this for initialization
-	void Start () {
-
-	}
 
 	public void ChangeRight() {
+		//Se cambia el titulo a la cancion de la derecha tocando
 		textIndex += 1;
 
 		if (textIndex >= 5){
@@ -42,6 +41,7 @@ public class TextController : MonoBehaviour {
 	}
 
 	public void ChangeLeft() {
+		//Se cambia el titulo a la cancion de la izquierda tocando
 		textIndex -= 1;
 
 		if (textIndex <= -1){
@@ -65,11 +65,5 @@ public class TextController : MonoBehaviour {
 			alternateText.text = "USSR anthem";
 			break;
 		}
-	}
-
-
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
